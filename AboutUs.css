@@ -1,0 +1,26 @@
+.cont {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  align-items: center;
+  gap: 20px;
+  align-items: stretch;
+  margin-top: 40px;
+  justify-content: space-between;
+}
+.cont > div {
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+
+.posrel {
+  position: relative;
+}
+.posabs {
+  position: absolute;
+  transition: 0.3s ease;
+  top: -100%;
+  background-color: bisque;
+}
+
+.posrel:hover .posabs {
+  top: 0;
+}
